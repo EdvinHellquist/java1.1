@@ -28,8 +28,7 @@ public class MyController {
     private class EnterListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            UnitTestWorker worker = new UnitTestWorker();
-            worker.doInBackground();
+            new UnitTestWorker().execute();
         }
     }
 
